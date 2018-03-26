@@ -3,7 +3,7 @@ const timer = document.getElementById('timer');
 const leftBox =document.getElementsByClassName('leftBox');
 const btns= document.getElementsByClassName('btn');
 const rightBox =document.getElementsByClassName('rightBox');
-counter(15);
+counter(20);
 function counter(t) {
           if(t<0){
               leftBox[0].innerHTML="<h1>Time's Over</h1>";
@@ -12,7 +12,7 @@ function counter(t) {
            }
     timer.innerHTML="Time Left: "+t+" Secs";
     t--;
-    //setTimeout(counter,1000,t);
+    setTimeout(counter,1000,t);
 }
 
 var pos=0, score=0, questions, question,optA,optB,optC,options,option;
