@@ -153,6 +153,11 @@ transform: rotate(45deg) translate(-4px, -3px) ;
 }
 
 @media screen and (max-width:500px){
+  .main{
+  width:70%;
+    left:15%;
+    top:-80%;
+  }
 .rightBox{
   display: none;
   float:none;
@@ -187,6 +192,6 @@ transform: rotate(45deg) translate(-4px, -3px) ;
 }
 @keyframes myZoom {
   0%{top: -60%}
-  70% {top: 190px}
-  100%{top:150px}
+  70% {top: 170px}
+  100%{top:130px}
 }
