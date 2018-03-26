@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+*{
+box-sizing: border-box;
+}
+body{
+  padding:0;
+  margin:0;
+  background:url('bg.jpg') no-repeat -100px -370px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+.main{
+  width:35%;
+  height:300px;
+  background-color: rgba(210,210,210,.4);
+  text-align: center;
+  border-radius:10px;
+  box-shadow: 0 0 10px #111;
+  position:absolute;
+  left:33%;
+  top:-60%;
+  animation: myZoom 1s ease .6s forwards;
+font-family: 'Philosopher', sans-serif;
+}
+.main h2{
+  color:#eee;
+  padding-top:10%;
+  text-shadow: 4px 4px 8px #222;
+}
+.btnStart{
+  background: #3b1845;
+  text-decoration:none;
+  border-radius:5px;
+  padding: 20px 40px;
+  font-size:25px;
+  color:#fff;
+  cursor:pointer;
+  margin-top:15%;
+  display: inline-block;
+}
+.btnStart:hover{
+  background-color:#222;
+}
+
+/*.......indexSecond.........*/
+.container{
+  width:80%;
+  height:620px;
+  //background-color:#370e78;
+  background-color: rgba(0,0,0,0.4);
+  border-radius:10px;
+  box-shadow: 0 0 12px #222;
+  margin:30px auto;
+  overflow: auto;
+  position: relative;
+}
+#timer{
+  width:160px;
+  padding:10px;
+  margin:15px auto;
+  background-color: #d00f0f;
+  color:#fff;
+  border-radius: 5px;
+}
+
+.leftBox{
+  width:60%;
+  height:80%;
+  background-color:#b88c03;
+  float:left;
+  margin: 10px 10px 0 7%;
+  border-radius:5px;
+  padding:30px 50px;
+  box-shadow: 0 0 8px #777;
+}
+
+.rightBox{
+  width:25%;
+  height:80%;
+  background-color:#b88c03;
+  float:left;
+  margin-top:10px;
+  border-radius:5px;
+  box-shadow: 0 0 8px #777;
+}
+.rightBox:after{
+  content: "";
+  display:block;
+  clear:both;
+}
+.btn{
+  float:left;
+  background: #d2d2d2;
+  outline:none;
+  border:none;
+  height: 40px;
+  width:40px;
+  border-radius:50%;
+  font-size:20px;
+  color:#000;
+  cursor:pointer;
+  margin:15px 8px;
+  box-shadow: 0 0 5px #333;
+  line-height: 40px;
+}
+.btnSubmit,#btnTag{
+  background: #000;
+  text-decoration:none;
+  border-radius:30px;
+  padding: 10px 30px;
+  font-size:20px;
+  color:white;
+  cursor:pointer;
+  display: inline-block;
+  border:none;
+  margin:30px 20px;
+  outline:none;
+}
+
+.btnSubmit:hover,#btnTag:hover{
+  background:#333;
+}
+.tag{
+  background-color:#800080;
+  color:#fff;
+}
+/* Mobile Menu*/
+#mobMenu{
+  margin:10px 10px 0 80%;
+  display: inline-block;
+  color:white;
+  cursor: pointer;
+  padding:2px;
+}
+.bar1,.bar2,.bar3{
+  width:30px;
+  height:4px;
+  margin-bottom: 4px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: .5s;
+}
+.rotate .bar1{
+transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.rotate .bar2{
+opacity:0;
+}
+.rotate .bar3{
+transform: rotate(45deg) translate(-4px, -3px) ;
+}
+
+@media screen and (max-width:500px){
+.rightBox{
+  display: none;
+  float:none;
+}
+.container {
+  width:100%;
+  margin:0;
+}
+.leftBox{
+  float: none;
+  width:90%;
+  margin:auto;
+ }
+ .rightBox.change{
+   display: block;
+   position:absolute;
+   background-color: rgba(39,47,46,.9);
+   right:0;
+   top:16%;
+   width:93%;
+   height:78%;
+   float:none;
+   z-index: 1;
+   box-shadow: 0 0 8px #222;
+   animation: myEffect .5s;
+ }
+}
+
+@keyframes myEffect {
+  from{transform:scaleX(0)}
+   to{transform:scaleX(1)}
+}
+@keyframes myZoom {
+  0%{top: -60%}
+  70% {top: 190px}
+  100%{top:150px}
+}
