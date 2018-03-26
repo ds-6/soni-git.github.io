@@ -153,6 +153,9 @@ transform: rotate(45deg) translate(-4px, -3px) ;
 }
 
 @media screen and (max-width:500px){
+  body{
+  background:url('bg.jpg') no-repeat -300px -600px;
+  }
   .main{
   width:70%;
     left:15%;
