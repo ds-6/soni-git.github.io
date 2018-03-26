@@ -7,7 +7,7 @@ counter(20);
 function counter(t) {
           if(t<0){
               leftBox[0].innerHTML="<h1>Time's Over</h1>";
-              leftBox[0].innerHTML+="<h3>Your Score is: "+score+".";
+              leftBox[0].innerHTML+="<h3>Your Final Score is: "+score+".";
                 return;
            }
     timer.innerHTML="Time Left: "+t+" Secs";
